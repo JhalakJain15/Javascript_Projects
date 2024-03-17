@@ -61,5 +61,5 @@ if(i>random_color.length-1){
 }
 return random_color[i++];
 
-return random_color[i++]
+
 }
