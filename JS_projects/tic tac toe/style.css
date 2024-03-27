@@ -1,0 +1,42 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}*/
+body{
+    background:rgb(171, 154, 131) ;
+    font-family:Segoe UI Symbol;
+} 
+.container{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.board{
+    
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+       
+
+}
+.cell{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    font-size: 2em;
+    cursor: pointer;
+    background-color:rgb(193, 221, 245) 
+    
+}
+.restart{
+    padding:15px;
+    margin-top: 100px;
+    background-color:rgb(193, 221, 245) ;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius:4px;
+}
