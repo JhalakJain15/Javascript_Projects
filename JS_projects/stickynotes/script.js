@@ -1,8 +1,8 @@
-var container2=document.getElementsByClassName("container-2")[0];
-var container3=document.getElementsByClassName("container-3")[0];
-var checkIcon=document.getElementById("check-icon")
-var crossIcon=document.getElementById("cross-icon")
-var i=0;
+let container2=document.getElementsByClassName("container-2")[0];
+let container3=document.getElementsByClassName("container-3")[0];
+let checkIcon=document.getElementById("check-icon")
+let crossIcon=document.getElementById("cross-icon")
+let i=0;
 crossIcon.addEventListener("click",function(){
     typeNote();
 })
@@ -19,9 +19,9 @@ function typeNote(){
 }
 function createNote(){
     
-    var noteText=document.getElementById("note-text").value;
-    var node0=document.createElement("div");
-    var node1=document.createElement("h1");
+    let noteText=document.getElementById("note-text").value;
+    let node0=document.createElement("div");
+    let node1=document.createElement("h1");
     node1.innerHTML=noteText
     node1.setAttribute("style","width:250px; height:250px; font-size:26px; padding:25; ,margin-top:10px; overflow:hidden;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)" );
     node1.style.margin=margin();
@@ -45,17 +45,17 @@ function createNote(){
 
 }
 function margin(){
-    var random_margin=['-5px','1px','5px','10px','15px','20px'];
+    let random_margin=['-5px','1px','5px','10px','15px','20px'];
     return random_margin[Math.floor(Math.random()*random_margin.length)];
 
 }
 function rotate(){
-    var random_rotate=["rotate(3deg)","rotate(1deg)","rotate(-1deg)","rotate(-3deg),","rotate(-5deg)","rotate(-10deg)"]
+    let random_rotate=["rotate(3deg)","rotate(1deg)","rotate(-1deg)","rotate(-3deg),","rotate(-5deg)","rotate(-10deg)"]
     return random_rotate[Math.floor(Math.random()*random_rotate.length)]
 }
 function color()
 {
-var random_color=["rgb(12, 183, 235)","rgb(132, 193, 46)","yellow","orange","purple"]
+let random_color=["rgb(12, 183, 235)","rgb(132, 193, 46)","yellow","orange","purple"]
 if(i>random_color.length-1){
     i=0;
 }
